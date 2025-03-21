@@ -1,5 +1,5 @@
 from setuptools import setup, find_packages
-from .rapidocr_mcp import __version__
+from rapidocr_mcp import __version__
 
 setup(
     name="rapidocr-mcp",

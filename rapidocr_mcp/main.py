@@ -13,13 +13,13 @@ engine = RapidOCR()
 
 @mcp.tool()
 def ocr_by_content(base64_data: str) -> List[TextContent]:
-    """使用base64编码的图片内容进行OCR识别。
+    """Perform OCR recognition on base64 encoded image content.
 
     Args:
-        base64_data: base64编码的图片内容字符串
+        base64_data: Base64 encoded image content string
 
     Returns:
-        List[TextContent]: 识别出的文本内容列表
+        List[TextContent]: List of recognized text content
     """
     if not base64_data:
         return []
@@ -33,13 +33,13 @@ def ocr_by_content(base64_data: str) -> List[TextContent]:
 
 @mcp.tool()
 def ocr_by_path(path: str) -> List[TextContent]:
-    """使用图片文件路径进行OCR识别。
+    """Perform OCR recognition on an image file.
 
     Args:
-        path: 图片文件的路径
+        path: Path to the image file
 
     Returns:
-        List[TextContent]: 识别出的文本内容列表
+        List[TextContent]: List of recognized text content
     """
     if not path:
         return []
