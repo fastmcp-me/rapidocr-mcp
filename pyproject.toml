@@ -1,6 +1,6 @@
 [project]
 name = "rapidocr-mcp"
-version = "0.3.0"
+version = "0.4.0"
 description = "RapidOCR MCP Server for OCR processing"
 readme = "README.md"
 requires-python = ">=3.13"
@@ -11,6 +11,7 @@ authors = [
 keywords = ["ocr", "rapidocr", "mcp"]
 dependencies = [
     "mcp[cli]>=1.4.1",
+    "onnxruntime>=1.21.0",
     "rapidocr>=2.0.3",
     "requests>=2.32.3",
 ]
